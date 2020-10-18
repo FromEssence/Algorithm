@@ -1,5 +1,5 @@
 /*
-  AC code for HDU 5992
+  AC code for HDU 5992 [452MS 11388K]
   kd树
       1.构建: 使用三维; 维护每个点代表的空间
       2.查询:
