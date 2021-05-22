@@ -2,7 +2,7 @@
 
 ### 1. 引入
 
-将n个数分为k个非空集合的方法数。
+将n个数分为k个非空集合的方法数。对k进行sigma求和则得到"贝尔数"，即集合划分为非空子集的总方法数。
 
 
 
@@ -11,7 +11,7 @@
 #### 1. 第二类Stirling
 
 1. HDU 2512 裸题
-2. HDU 2643
+2. HDU 2643 加上需要对顺序进行排列
 
 #### 2. 第一类
 
@@ -33,7 +33,7 @@
 2. 保持先后顺序不变，对n+1个数字进行n次划分[4]
 	* 有n+1个叶子的有根满二叉树的个数
 	* 满足结合律的n+1个连乘因子的不同计算顺序，因为这样才正好有n次乘法
-3. n个元素进行non-crossing划分，划分方法总数
+3. n个元素进行non-crossing划分，划分方法总数。注意！这不是普通的划分数, 贝尔数才是集合划分数目, 且有C(n)<=B(b)
 
 ### 3. 实战例题
 
@@ -44,9 +44,8 @@
 2. [Catalan ppt](https://math.mit.edu/~rstan/transparencies/china.pdf)
 3. [cp-algorithm](https://cp-algorithms.com/combinatorics/catalan-numbers.html)
 4. [Catalan wiki](en.wikipedia.org/wiki/Catalan_number#Applications_in_combinatorics)
-5. https://blog.csdn.net/a1392136/article/details/101635704
-6. https://chgtaxihe.top/2020/06/24/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/
-7. https://www.whitman.edu/mathematics/cgt_online/book/section01.08.html
-8. https://math.stackexchange.com/questions/1572788/catalan-numbers-vs-bell-numbers
-9. 
+5. https://chgtaxihe.top/2020/06/24/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/
+6. https://www.whitman.edu/mathematics/cgt_online/book/section01.08.html
+7. https://math.stackexchange.com/questions/1572788/catalan-numbers-vs-bell-numbers
+8. 
 
