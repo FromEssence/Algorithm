@@ -27,7 +27,8 @@ int main(){
     for(int i=1; i<=n; ++i)
         for(int j=0; j<=15000; ++j)
             for(int k=1; k<=numOfPos; ++k){
-                dp[i][j+cost[i]*pos[k]] += dp[i-1][j];
+				if(j+cost[i]*pos[k]>=0)
+					dp[i][j+cost[i]*pos[k]] += dp[i-1][j];
             }
     cout <<dp[n][7500];
 
